@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page_navigations"
+    app:startDestination="@id/home_dest">
+
+    <!-- keeping same ids of fragment as
+    mentioned in menu file of bottom navigation
+     this will automatically connect fragments to bottom menu-->
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:label="Home Page"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_choose_onboarding"
+        android:name="com.medha.parkplusdemo.ui.fragments.home.HomeFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/grass_menu"
+        android:label="Second Fragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_choose_onboarding"
+        android:name="com.medha.parkplusdemo.ui.fragments.home.SecondFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/star_menu"
+        android:label="Third FRagment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_choose_onboarding"
+        android:name="com.medha.parkplusdemo.ui.fragments.home.ThirdFragment"
+        >
+
+    </fragment>
+
+</navigation>

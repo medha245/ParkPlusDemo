@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:label=""
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        tools:layout="@layout/fragment_choose_onboarding"
+        android:name="com.medha.parkplusdemo.ui.fragments.WelcomeFragment"
+        >
+        <action
+            android:id="@+id/moveToLoginPage"
+            app:destination="@id/loginFragment"/>
+
+        <action
+            android:id="@+id/moveToSignupPage"
+            app:destination="@id/signupFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:label=""
+        tools:layout="@layout/fragment_login"
+        android:name="com.medha.parkplusdemo.ui.fragments.LoginFragment"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:label=""
+        tools:layout="@layout/fragment_signup"
+        android:name="com.medha.parkplusdemo.ui.fragments.SignupFragment"
+        >
+    </fragment>
+
+
+</navigation>
